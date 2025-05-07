@@ -1,0 +1,20 @@
+$primary-color: #5368df;
+$secondary-color: #fa5757;
+$text-color: #252b46;
+$light-text: #9194a1;
+$light-bg: #f7f7f7;
+$font-family: arial, sans-serif ;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+body {
+    color: $text-color;
+    line-height: 1.6;
+    padding-top: 80px;
+    
+}
