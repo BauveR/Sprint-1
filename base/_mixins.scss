@@ -1,0 +1,25 @@
+
+@mixin hover-text($color) {
+    &:hover {
+        cursor: pointer;
+        color: $color;
+    }
+}
+
+@mixin hover-button($bg-color,$t-color, $bg-color){
+    &:hover{
+        cursor: pointer;
+        background-color: $bg-color;
+        color: $f-color;
+        border-color: $bd-colo;
+    }
+}
+
+@mixin hover-icon(){
+    &:hover{
+        cursor: pointer;
+        filter: invert(0.7) sepia(72%) saturate(983%) hue-rotate(319deg)
+        brightness(119%) contrast(97%);
+    }
+}
+
