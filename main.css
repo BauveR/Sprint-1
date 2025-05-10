@@ -73,4 +73,54 @@ html body .shadow {
   border-color: #fa5757;
 }
 
+.hero {
+  display: flex;
+  margin: 8rem auto;
+  gap: 5rem;
+}
+.hero__info {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero__info-text {
+  font-size: 2rem;
+  color: #9194a1;
+  line-height: 3.5rem;
+}
+.hero__info-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem 0;
+  font-weight: 650;
+}
+.hero__info-button--chrome, .hero__info-button--firefox {
+  padding: 2rem 3rem;
+  border-radius: 0.6rem;
+  border: 2px solid transparent;
+}
+.hero__info-button--chrome {
+  background-color: #5368df;
+  color: #f7f7f7;
+}
+.hero__info-button--chrome:hover {
+  cursor: pointer;
+  background-color: #f7f7f7;
+  color: #5368df;
+  border-color: #5368df;
+}
+.hero__info-button--firefox:hover {
+  cursor: pointer;
+  background-color: #f7f7f7;
+  color: #5368df;
+  border-color: #5368df;
+}
+.hero__img {
+  flex: 1;
+  position: relative;
+}
+
 /*# sourceMappingURL=main.css.map */

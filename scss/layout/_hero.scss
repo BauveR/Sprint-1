@@ -1,2 +1,60 @@
 @use "../base/variables";
 @use "../base/mixins";
+
+
+.hero {
+
+    display: flex;
+    margin: 8rem auto;
+    gap: 5rem;
+
+    &__info {
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        &-text {
+            font-size: 2rem;
+            color: variables.$light-text;
+            line-height: 3.5rem;
+        }
+
+        &-button {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            gap: 2rem;
+            margin: 2rem 0;
+            font-weight: 650;
+
+            &--chrome,
+            &--firefox {
+                padding: 2rem 3rem;
+                border-radius: 0.6rem;
+                border: 2px solid transparent;
+            }
+
+            &--chrome {
+                background-color: variables.$primary-color;
+                color: variables.$light-bg;
+
+                @include mixins.hover-button(variables.$light-bg,
+                    variables.$primary-color,
+                    variables.$primary-color );
+            }
+
+            &--firefox {
+                @include mixins.hover-button(variables.$light-bg,
+                    variables.$primary-color,
+                    variables.$primary-color );
+            }
+        }
+    }
+
+    &__img {
+        flex: 1;
+        position: relative;
+    }
+
+}
