@@ -6,12 +6,12 @@
     }
 }
 
-@mixin hover-button($bg-color,$t-color, $bg-color){
+@mixin hover-button($bg-color,$f-color, $bo-color){
     &:hover{
         cursor: pointer;
         background-color: $bg-color;
         color: $f-color;
-        border-color: $bd-colo;
+        border-color: $bo-color;
     }
 }
 

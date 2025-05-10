@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple bookmark - sass</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="main.css"/>
     
 </head>
 <body>
-  <header class="main-header">
-    <div class="container header-container">
+  <header class="container">
+    <div class="header__nav-container">
       <a href="#" class="logo">
-        <img src="/Imagenes/logo-bookmark.svg" class="logo-svg">
+        <img src="/Resources/logo-bookmark.svg" class="logo-svg">
       </a>
-      <nav class="main-nav">
-        <a href="#" class="btn-menu">Features</a>
-        <a href="#" class="btn-menu">Pricing</a>
-        <a href="#" class="btn-menu">Contact</a>
-        <a href="#" class="btn-login">Login</a>
+      <nav class="header__nav-container-list">
+        <a  class="header__nav-container-list-button" href="#">Features</a>
+        <a  class="header__nav-container-list-button" href="#">Pricing</a>
+        <a  class="header__nav-container-list-button" href="#">Contact</a>
+        <a  class="header__nav-container-list-login shadow" href="#">Login</a>
       </nav>
       <button class="hamburger-btn">☰</button>
     </div>
