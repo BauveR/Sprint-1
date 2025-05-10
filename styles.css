@@ -314,11 +314,6 @@ p {
     margin: 0 auto;
     flex-wrap: nowrap;
   }
-
-
-
-
-
   .browser-cards {
     display: flex;
     flex-wrap: wrap;
