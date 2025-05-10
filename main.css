@@ -57,10 +57,10 @@ html body .shadow {
 }
 .header__nav-container-list-button:hover {
   cursor: pointer;
-  color: #fa5757;
+  color: #5368df;
 }
 .header__nav-container-list-button--login {
-  color: #9194a1;
+  color: #f7f7f7;
   background-color: #fa5757;
   border-radius: 0.5rem;
   padding: 1rem 3rem;
@@ -68,7 +68,7 @@ html body .shadow {
 }
 .header__nav-container-list-button--login:hover {
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   color: #fa5757;
   border-color: #fa5757;
 }

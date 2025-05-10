@@ -16,17 +16,17 @@
             color: variables.$text-color;
             padding: 1rem 3rem;
 
-            @include mixins.hover-text(variables.$secondary-color);
+            @include mixins.hover-text(variables.$primary-color);
 
             &--login {
-                color: variables.$light-text;
+                color: variables.$light-bg;
                 background-color: variables.$secondary-color;
                 border-radius: 0.5rem;
                 padding: 1rem 3rem;
                 border: 2px solid transparent;
 
                 @include mixins.hover-button(
-                    variables.$white,
+                    variables.$light-bg,
                     variables.$secondary-color,
                     variables.$secondary-color
                 );
