@@ -78,18 +78,19 @@ html body .shadow {
   margin: 8rem auto;
   gap: 5rem;
 }
-.hero__info {
+.hero__main {
   flex: 1;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
-.hero__info-text {
+.hero__main-text {
   font-size: 2rem;
   color: #9194a1;
   line-height: 3.5rem;
 }
-.hero__info-button {
+.hero__main-button {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -97,30 +98,80 @@ html body .shadow {
   margin: 2rem 0;
   font-weight: 650;
 }
-.hero__info-button--chrome, .hero__info-button--firefox {
+.hero__main-button--chrome, .hero__main-button--firefox {
   padding: 2rem 3rem;
   border-radius: 0.6rem;
   border: 2px solid transparent;
 }
-.hero__info-button--chrome {
+.hero__main-button--chrome {
   background-color: #5368df;
   color: #f7f7f7;
 }
-.hero__info-button--chrome:hover {
+.hero__main-button--chrome:hover {
   cursor: pointer;
   background-color: #f7f7f7;
   color: #5368df;
   border-color: #5368df;
 }
-.hero__info-button--firefox:hover {
+.hero__main-button--firefox:hover {
   cursor: pointer;
   background-color: #f7f7f7;
   color: #5368df;
   border-color: #5368df;
 }
-.hero__img {
+.hero__shape {
   flex: 1;
   position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    flex: 1;
+  }
+  .hero__info {
+    width: 80%;
+    margin: 1rem auto;
+    order: 2;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .hero__info-title, .hero__info-text {
+    text-align: center;
+  }
+  .hero__info-button {
+    margin: 2rem auto;
+  }
+  .hero__info-button--chrome, .hero__info-button--firefox {
+    padding: 2rem;
+  }
+  .hero__shape {
+    order: 1;
+  }
+  .hero__shape::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 30%;
+    left: 30%;
+    height: 70%;
+    width: 100vw;
+    border-bottom-left-radius: 15rem;
+    background-color: #5368df;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero__shape::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 30%;
+    left: 30%;
+    height: 70%;
+    width: 100vw;
+    border-bottom-left-radius: 15rem;
+    background-color: #5368df;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
