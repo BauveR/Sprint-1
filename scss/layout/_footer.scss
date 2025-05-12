@@ -1,78 +1,78 @@
-@use"../base/variables";
-@use"../base/mixins";
+@use "../base/variables";
+@use "../base/mixins";
 
-.footer{
+.footer {
     position: relative;
 
-    &::before{
+    &::before {
         position: absolute;
         content: ""; 
-        background-color: variables.$semi-transparent-bg ;
-        width: 100%;
+        background-color: variables.$text-color;
+        width: 100vw;
         height: 100%;
         z-index: -1;
     }
-    &_container{
+
+    &_container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 4rem 0;
+        margin: 0 auto;
+        max-width: 1200rem;
+        
 
-
-        &-nav{
+        &-nav {
             display: flex;
-            justify-content: center;
             align-items: center;
             gap: 8rem;
 
-            &-link{
+            &-link {
                 text-transform: uppercase;
-                font-size: 1.7rem;
+                font-size: 1.8rem;
                 color: variables.$light-bg;
-
-                @include mixins.hover-text(variables.$secondary-color)
-
+                
+                @include mixins.hover-text(variables.$secondary-color);
             }
         }
-        &-social{
+
+        &-social {
             display: flex;
             gap: 5rem;
 
             &-facebook,
-            &-twitter{
+            &-twitter {
                 @include mixins.hover-icon();
+                
+                }
             }
-
         }
-
     }
-}
 
-@media only screen and (max-width: 768px){
 
-    .footer{
-        
-        &-container{
+@media only screen and (max-width: 768px) {
+    .footer {
+        &_container {
             padding: 4rem 0;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 2rem;
 
-            &-nav{
+            &-nav {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 2rem;
+                gap: 3rem;
                 
-                &-bookmark{
+                &-bookmark {
                     margin-bottom: 2rem;
                 }
             }
-            &-social{
-                margin:3rem;
-            }
 
+            &-social {
+                margin: 3rem auto 1rem auto;
+            }
         }
     }
 }
