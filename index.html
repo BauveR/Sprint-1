@@ -53,10 +53,6 @@
         </div>
     </div>
 
-    <div class="container-xxl mt-5">
-
-    </div>
-
 
     <div class="container text-center mt-5 px-5 py-5">
 
@@ -71,36 +67,44 @@
             </div>
             
         
+<div class="container">
 
-<div class="container text-center my-4">
-    <button class="btn btn-outline-primary mx-2" data-bs-target="#customCarousel" data-bs-slide-to="0">Slide 1</button>
-    <button class="btn btn-outline-primary mx-2" data-bs-target="#customCarousel" data-bs-slide-to="1">Slide 2</button>
-    <button class="btn btn-outline-primary mx-2" data-bs-target="#customCarousel" data-bs-slide-to="2">Slide 3</button>
-  </div>
+    <div class="container text-center my-4">
+        <button class="btn btn-outline-primary mx-2" data-bs-target="#customCarousel" data-bs-slide-to="0">Slide 1</button>
+        <button class="btn btn-outline-primary mx-2" data-bs-target="#customCarousel" data-bs-slide-to="1">Slide 2</button>
+        <button class="btn btn-outline-primary mx-2" data-bs-target="#customCarousel" data-bs-slide-to="2">Slide 3</button>
+      </div>
+    
+      <div id="customCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-block w-100 bg-primary text-white text-center py-5">
+                <div class="card mb-3 border-0 " style="max-width: 100%;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="card-body mt-5">
+                                <h1 class="card-title fs-2 fw-bold">A Simple Bookmark <br> Manager</h1>
+                                <p class="card-text"> A clean and simple interface to organize your favorite
+                                    websites. Open a new browser tab and see your sites load
+                                    instantly. Try it for free.</p>
+                                <a href="#" class="btn btn-primary"> Get it on Chrome</a>
+                                <a href="#" class="btn btn-primary">Get it on Firefox</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <img src="/src/resources/illustration-hero.svg" class="img-fluid rounded-start" alt="features">
+                        </div>
+                    </div>
+                </div>
+              <p>Este es el tercer slide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
-  <div id="customCarousel" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="d-block w-100 bg-primary text-white text-center py-5">
-          <h2>Contenido 1</h2>
-          <p>Este es el primer slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-block w-100 bg-success text-white text-center py-5">
-          <h2>Contenido 2</h2>
-          <p>Este es el segundo slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-block w-100 bg-danger text-white text-center py-5">
-          <h2>Contenido 3</h2>
-          <p>Este es el tercer slide.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+</div>
+
 
   <div class="container text-center px-5 py-5">
     <h1 class="card-title fs-2 fw-bold">Downloads</h1>
@@ -109,30 +113,39 @@
 </div>
 
 <div class="container">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
+    
+    <div class="col-md-4">
+        <div class="card p-5" style="width: 18rem;">
+            <img src="/src/resources/logo-chrome.svg" class="card-img-top" alt="chrome">
+            <div class="card-body">
+              <h5 class="card-title p-2">Add to Chrome</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/src/resources/logo-firefox.svg" class="card-img-top" alt="firefox">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+      
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="/src/resources/logo-opera.svg" class="card-img-top" alt="opera">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+      
 </div>
 
 <div class="container">
