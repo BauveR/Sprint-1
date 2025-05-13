@@ -1,0 +1,36 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.header__nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto;
+
+    &-list {
+        display: flex;
+        gap: 3rem;
+        text-transform: uppercase;
+
+        &-button{
+            color: variables.$text-color;
+            padding: 1rem 3rem;
+
+            @include mixins.hover-text(variables.$primary-color);
+
+            &--login {
+                color: variables.$light-bg;
+                background-color: variables.$secondary-color;
+                border-radius: 0.5rem;
+                padding: 1rem 3rem;
+                border: 2px solid transparent;
+
+                @include mixins.hover-button(
+                    variables.$light-bg,
+                    variables.$secondary-color,
+                    variables.$secondary-color
+                );
+                }
+            }
+        }
+    }
